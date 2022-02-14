@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *
+        {
+           box-sizing: border-box; 
+        }
+        body
+        {
+            background-color: aliceblue;
+            padding: 10px;
+            font-family: Arial;
+        }
+
+
+        .header
+        {
+            background-color: bisque;
+            border-radius: 5px;
+            padding: 25px;
+            text-align: center;
+        }
+
+
+        .nav
+        {
+            overflow: hidden;
+            background-color: beige;
+        }
+
+        .nav a
+        {
+            padding: 15px 17px;
+            float: left ;
+            text-decoration: none;
+            color: brown;
+        }
+
+        .nav a:hover
+        {
+            background-color:bisque;
+        }
+
+        .row
+        {
+            
+        }
+        .left-side
+        {
+            width: 75%;
+            float: left;
+            padding-left: 20px;
+            
+        }
+
+        .right-side
+        {
+            width: 25%;
+            float: left;
+            padding-right: 20px;
+        }
+        img
+        {
+            text-align: center;
+            display: block;
+            margin: auto;
+        }
+
+        .row::after
+        {
+
+        content: "";
+        display: table;
+        clear: both;
+
+        }
+
+
+        .footer
+        {
+            text-align: center;
+            background-color: goldenrod;
+            padding: 20px;
+            overflow: auto;
+        }
+
+        .card
+        {
+            background-color: aliceblue;
+            padding: 20px;
+            margin-top: 20px;
+
+        
+        }
+
+        
+    @media screen and (max-width:1000px)
+    {
+        .left-side,.right-side
+        {
+            width: 100%;
+        }    
+    }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+
+        <h1>My Website</h1>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam omnis quisquam odio voluptatum cum 
+            dolorem dolores minus maiores voluptatem, iusto, quia vero adipisci dolor quod. Ab repellat non consequatur
+             cum eligendi rerum sit. Ducimus et voluptatum delectus a nostrum ullam adipisci totam quisquam odio velit, 
+             dolorem reprehenderit architecto deserunt. Officiis!</p>
+
+    </div>
+
+    <div class="nav">
+
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#" style="float: right;">Link 4</a>
+    
+    </div>
+
+
+    <div class="row">
+        <div class="left-side">
+
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Title Description Dec 7 2017</h5>
+                <img src="1.jpg" alt="" width="200px">
+                <p>Some Text</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aut perspiciatis neque voluptates minus 
+                    assumenda similique exercitationem non necessitatibus, amet provident laboriosam aperiam temporibus omnis 
+                    molestias voluptatem at. Quaerat velit odio vel sint, nesciunt natus. Cum dolore accusantium culpa id 
+                    itaque saepe voluptates dolorum repudiandae. Possimus exercitationem neque reprehenderit? Dolorem.
+                </p>
+            </div>
+            <div class="card">
+
+            <h2>TITLE HEADING</h2>
+            <img src="2.jpg" alt="" width="200px">
+            <p>Some Text</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aut perspiciatis neque voluptates minus 
+                assumenda similique exercitationem non necessitatibus, amet provident laboriosam aperiam temporibus omnis 
+                molestias voluptatem at. Quaerat velit odio vel sint, nesciunt natus. Cum dolore accusantium culpa id 
+                itaque saepe voluptates dolorum repudiandae. Possimus exercitationem neque reprehenderit? Dolorem.
+            </p>
+        </div>
+        </div>
+
+        <div class="right-side">
+
+            <div class="card">
+
+                <h2>About Me</h2>
+                <img src="3.jpg" alt="" width="200px">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate tempora alias quaerat eius tenetur odio reprehenderit!
+                    Illum neque aut incidunt.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Populer Post</h2>
+                <img src="4.jpg" alt="" width="100px">
+                <img src="4.jpg" alt="" width="100px">
+                <img src="4.jpg" alt="" width="100px">
+            </div>
+
+            <div class="card">
+                <h2>Follow Me</h2>
+                <p>Some Text</p>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <h1>Footer</h1>
+
+    </div>
+
+
+
+</body>
+</html>
